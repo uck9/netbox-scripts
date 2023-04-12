@@ -51,10 +51,6 @@ python3 manage.py createsuperuser
 
 # Setup Housekeeping Task
 sudo ln -s /opt/netbox/contrib/netbox-housekeeping.sh /etc/cron.daily/netbox-housekeeping
-sudo cp -v /opt/netbox/contrib/*.service /etc/systemd/system/
-sudo systemctl daemon-reload
-sudo systemctl start netbox netbox-rq
-sudo systemctl enable netbox netbox-rq
 
 # Install webservers
 sudo cp /opt/netbox/contrib/gunicorn.py /opt/netbox/gunicorn.py
