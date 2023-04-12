@@ -34,7 +34,7 @@ sudo chown --recursive netbox /opt/netbox/netbox/media/
 
 # Setup configuration
 cd /opt/netbox/netbox/netbox/
-sudo cp configuration.example.py configuration.py
+sudo cp configuration_example.py configuration.py
 sudo sed -i "s/ALLOWED_HOSTS = \[\]/ALLOWED_HOSTS = \['*'\]/" /opt/netbox/netbox/netbox/configuration.py
 sudo sed -i "s/'USER': '',/'USER': 'netbox',/" /opt/netbox/netbox/netbox/configuration.py
 sudo sed -i "s/'PASSWORD': '',           # PostgreSQL password/'PASSWORD': 'J5brHrAXFLQSif0K',/" /opt/netbox/netbox/netbox/configuration.py
