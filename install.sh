@@ -33,7 +33,7 @@ sudo adduser --system --group netbox
 sudo chown --recursive netbox /opt/netbox/netbox/media/
 
 # Setup configuration
-cd netbox/netbox/
+cd netbox/netbox/netbox/
 sudo cp configuration.example.py configuration.py
 sudo sed -i "s/ALLOWED_HOSTS = \[\]/ALLOWED_HOSTS = \['*'\]/" /opt/netbox/netbox/netbox/configuration.py
 sudo sed -i "s/'USER': '',/'USER': 'netbox',/" /opt/netbox/netbox/netbox/configuration.py
