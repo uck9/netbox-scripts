@@ -42,7 +42,6 @@ PRIVATE_KEY='aslknfdslakfn3q43qknSKNDKNalisjf23jnlknd2kdn2dsknasdKN'
 sudo sed -i "s/SECRET_KEY = ''/SECRET_KEY = '${PRIVATE_KEY}'/" /opt/netbox/netbox/netbox/configuration.py
 
 # Run Upgrade Script
-cd /opt/netbox/netbox/
 sudo /opt/netbox/upgrade.sh
 
 # Create super user
