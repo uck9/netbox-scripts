@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
 NEW_VERSION=v3.5-beta2
-PREV_VERSION=v3.5-beta2
-URL=https://github.com/netbox-community/netbox/archive/refs/tags/v$NEW_VERSION.tar.gz
+PREV_VERSION=3.5-beta2
 CURDIR=`pwd`
 
 wget https://github.com/netbox-community/netbox/archive/v${NEW_VERSION}.tar.gz
