@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VERSION=3.5-beta1
+VERSION=3.6.7
 URL=https://github.com/netbox-community/netbox/archive/refs/tags/v$VERSION.tar.gz
 CURDIR=`pwd`
 
