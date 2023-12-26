@@ -17,7 +17,7 @@ sudo -u postgres psql < ${CURDIR}/conf/postgres.conf
 # Install Redis
 sudo apt install -y redis-server
 
-# Install app pre-requisites
+# Install app pre-requisites. Note LDAP Auth support is included in this list of packages.
 sudo apt install -y python3 python3-pip python3-venv python3-dev build-essential libxml2-dev libxslt1-dev libffi-dev libpq-dev libssl-dev zlib1g-dev libldap2-dev libsasl2-dev
 sudo pip install --upgrade pip
 
