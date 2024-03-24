@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-NEW_VERSION=3.5-beta2
-CURR_VERSION=3.5-beta2
+NEW_VERSION=3.6.9
+CURR_VERSION=3.6.7
 CURDIR=`pwd`
 
 wget https://github.com/netbox-community/netbox/archive/v${NEW_VERSION}.tar.gz
